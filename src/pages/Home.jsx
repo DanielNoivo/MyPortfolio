@@ -39,22 +39,22 @@ const Home = () => {
                     />
                     <div className="relative">
                         <img
-                            className="hidden animate-bounce-slow-2 w-10 md:w-12 absolute md:top-[-250px] md:left-[250px]"
+                            className="hidden sm:flex animate-bounce-slow-2 w-10 sm:w-12 absolute sm:top-[-250px] sm:left-[250px]"
                             src={Red}
                             alt=""
                         />
                         <img
-                            className="hidden animate-bounce-slow w-16 md:w-22 absolute md:top-[-270px] md:left-[-50px]"
+                            className="hidden sm:flex animate-bounce-slow w-16 sm:w-22 absolute sm:top-[-270px] sm:left-[-50px]"
                             src={Blue}
                             alt=""
                         />
                         <img
-                            className="hidden animate-bounce-slow w-10 md:w-14 absolute md:top-[-120px] md:left-[-120px]"
+                            className="hidden sm:flex animate-bounce-slow w-10 sm:w-14 absolute sm:top-[-120px] sm:left-[-120px]"
                             src={Pink}
                             alt=""
                         />
                         <img
-                            className="hidden animate-bounce-slow-2 w-12 md:w-18 absolute md:top-[-120px] md:left-[300px]"
+                            className="hidden sm:flex animate-bounce-slow-2 w-12 sm:w-18 absolute sm:top-[-120px] sm:left-[300px]"
                             src={Orange}
                             alt=""
                         />
