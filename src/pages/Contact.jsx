@@ -59,7 +59,7 @@ const Contact = () => {
                         other requests or questions, don't hesitate to contact
                         me using below form either.
                     </p>
-                    <div className="flex flex-col gap-4 mt-8 sm:flex-row sm:gap-20 sm:mt-20">
+                    <div className="flex flex-col gap-4 mt-8 sm:flex-row sm:gap-20 sm:mt-12 md:mt-20">
                         <div
                             className="flex flex-row gap-4 items-center
                     "
@@ -76,7 +76,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center mt-20 md:mt-0">
                     <form
                         className="flex flex-col ml-4 md:ml-20 w-[100%] items:left md:items-end"
                         onSubmit={sendEmail}

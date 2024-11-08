@@ -9,8 +9,8 @@ import Pink from '../assets/Images/ghost_pink.png';
 const Home = () => {
     return (
         <div className="flex justify-between items-start h-[100vh] mt-[40px] sm:items-center sm:mt-[-40px] md:mt-[-80px] max-w-[1240px] mx-auto *: px-4 text-white font-coolvetica">
-            <div className="mx-0 w-full gap-20 grid md:grid-cols-2 md:gap-40">
-                <div className="flex flex-col justify-center gap-2 ml-4 tracking-[4px]">
+            <div className="mx-0 w-full gap-10 grid md:grid-cols-2 md:gap-40">
+                <div className="flex flex-col justify-center gap-2 ml-4 tracking-[4px] items-center md:items-start">
                     <ReactTyped
                         className="h-[100px] font-semibold text-4xl md:text-5xl font-coolvetica tracking-[4px]"
                         strings={[
@@ -31,30 +31,30 @@ const Home = () => {
                         </button>
                     </a>
                 </div>
-                <div className="hidden md:flex flex-col justify-center">
+                <div className="flex flex-col justify-center">
                     <img
-                        className="w-[300px] w-max-[200px]"
+                        className="w-[300px] w-max-[200px] self-center sm:self-start"
                         src={Profile}
                         alt="Img Developer"
                     />
                     <div className="relative">
                         <img
-                            className="animate-bounce-slow-2 w-10 md:w-12 absolute md:top-[-250px] md:left-[250px]"
+                            className="hidden animate-bounce-slow-2 w-10 md:w-12 absolute md:top-[-250px] md:left-[250px]"
                             src={Red}
                             alt=""
                         />
                         <img
-                            className="animate-bounce-slow w-16 md:w-22 absolute md:top-[-270px] md:left-[-50px]"
+                            className="hidden animate-bounce-slow w-16 md:w-22 absolute md:top-[-270px] md:left-[-50px]"
                             src={Blue}
                             alt=""
                         />
                         <img
-                            className="animate-bounce-slow w-12 md:w-14 absolute md:top-[-120px] md:left-[-120px]"
+                            className="hidden animate-bounce-slow w-10 md:w-14 absolute md:top-[-120px] md:left-[-120px]"
                             src={Pink}
                             alt=""
                         />
                         <img
-                            className="animate-bounce-slow-2 w-12 md:w-18 absolute md:top-[-120px] md:left-[300px]"
+                            className="hidden animate-bounce-slow-2 w-12 md:w-18 absolute md:top-[-120px] md:left-[300px]"
                             src={Orange}
                             alt=""
                         />
