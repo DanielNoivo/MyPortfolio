@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/helvetica-neu.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes spin-cube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: rotateX(90deg) rotateY(45deg) rotateZ(0deg);
+    }
+    50% {
+        transform: rotateX(180deg) rotateY(90deg) rotateZ(0deg);
+    }
+    75% {
+        transform: rotateX(270deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+.cubespinner {
+    position: relative;
+    width: 100px; /* Tamanho do cubo */
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: spin-cube 20s infinite linear;
+}
+
+.face1,
+.face2,
+.face3,
+.face4,
+.face5,
+.face6 {
+    position: absolute;
+    width: 150px; /* Tamanho das faces */
+    height: 150px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 0px #ffd700;
+}
+
+.face1 {
+    transform: translateZ(100px);
+}
+
+.face2 {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.face3 {
+    transform: rotateY(180deg) rotateX(90deg) translateZ(100px);
+}
+
+.face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+
+.face5 {
+    transform: rotateY(-90deg) rotateZ(0deg) translateZ(100px);
+}
+
+.face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cubespinner {
+        animation: none;
+    }
+}
+
+body {
+    background-color: #022c43;
+}
